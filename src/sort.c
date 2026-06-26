@@ -1,4 +1,5 @@
 //Сортировка
+#include <stdio.h>
 void sortirovka(int arr[], int n) {
     int i, j, minIndex, temp;
 
@@ -19,4 +20,10 @@ void sortirovka(int arr[], int n) {
         }
         arr[i] = temp;
     }
+}
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
