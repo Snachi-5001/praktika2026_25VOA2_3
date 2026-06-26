@@ -53,3 +53,7 @@ dkms.conf
 
 # debug information files
 *.dwo
+<<<<<<< HEAD
+=======
+>>>>>>> a5cc2538fbd395cb49feefe07ea2b41567d39d10
+>>>>>>> 7acb19e (Initialize project structure)
