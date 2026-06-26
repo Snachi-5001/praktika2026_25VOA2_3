@@ -1,11 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "sort.h"
-#include "file_io.h"
-#include "menu.h"
 
-int main() {
-    system("chcp 65001");
-    printf("Система инициализирована.\n");
-    return 0;
+// Устойчивая сортировка выбором
+void sortirovka(int arr[], int n) {
+    int i, j, minIndex, temp;
+
+    for (i = 0; i < n - 1; i++) {
+        minIndex = i;
+
+        // Ищем минимальный элемент
+        for (j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        // Сдвиг вправо для устойчивости
+        temp = arr[minIndex];
+        for (j = minIndex; j > i; j--) {
+            arr[j] = arr[j - 1];
+        }
+        arr[i] = temp;
+    }
 }
