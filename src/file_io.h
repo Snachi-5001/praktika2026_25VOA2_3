@@ -1,5 +1,5 @@
-#ifndef SORT_H
-#define SORT_H
-void sortirovka(int arr[], int n);
-void printArray(int arr[], int n);
+#ifndef FILE_IO_H
+#define FILE_IO_H
+int read_from_file(int** arr, const char* filename);
+int save_to_file(int* arr, int n, const char* filename);
 #endif
