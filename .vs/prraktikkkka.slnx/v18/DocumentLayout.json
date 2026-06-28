@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\111\\Desktop\\prraktikkkka\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\111\\Desktop\\prraktikkkka\\src\\Makefile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Makefile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\111\\Desktop\\prraktikkkka\\src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -30,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "sort.h",
               "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\sort.h",
               "RelativeDocumentMoniker": "src\\sort.h",
               "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\sort.h",
               "RelativeToolTip": "src\\sort.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-06-26T22:15:17.844Z",
               "IsPinned": true,
@@ -48,52 +52,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Makefile",
+              "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\Makefile",
+              "RelativeDocumentMoniker": "src\\Makefile",
+              "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\Makefile",
+              "RelativeToolTip": "src\\Makefile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-28T18:13:00.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "file_io.c",
               "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\file_io.c",
               "RelativeDocumentMoniker": "src\\file_io.c",
               "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\file_io.c",
               "RelativeToolTip": "src\\file_io.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-06-26T23:17:20.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "file_io.h",
               "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\file_io.h",
               "RelativeDocumentMoniker": "src\\file_io.h",
               "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\file_io.h",
               "RelativeToolTip": "src\\file_io.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-06-26T23:17:18.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "sort.c",
               "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\sort.c",
               "RelativeDocumentMoniker": "src\\sort.c",
               "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\sort.c",
               "RelativeToolTip": "src\\sort.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-06-26T22:14:39.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\main.c",
               "RelativeDocumentMoniker": "src\\main.c",
               "ToolTip": "C:\\Users\\111\\Desktop\\prraktikkkka\\src\\main.c",
               "RelativeToolTip": "src\\main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAQwL8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-06-26T22:11:05.694Z",
               "EditorCaption": ""
