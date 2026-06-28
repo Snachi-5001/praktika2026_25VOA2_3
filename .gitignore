@@ -53,7 +53,41 @@ dkms.conf
 
 # debug information files
 *.dwo
-<<<<<<< HEAD
-=======
->>>>>>> a5cc2538fbd395cb49feefe07ea2b41567d39d10
->>>>>>> 7acb19e (Initialize project structure)
+
+# ===== VISUAL STUDIO SPECIFIC =====
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+*.sqlite
+*.db-wal
+*.db-shm
+
+# Build directories
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+out/
+bin/
+obj/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
