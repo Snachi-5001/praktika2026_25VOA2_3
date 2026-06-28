@@ -14,6 +14,9 @@ void handleManualInput(ProgramState* state);
 void handleRandomGeneration(ProgramState* state);
 void handleFileInput(ProgramState* state);
 void handleSortAndMeasure(ProgramState* state);
+void handleSaveToFile(ProgramState* state);      
+void handleClearArray(ProgramState* state);      
+void handleShowArray(ProgramState* state);       
 void handleExit(ProgramState* state);
 void clearArray(ProgramState* state);
 

@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include "sort.h"
-#include <stdlib.h>
+
 void sortirovka(int arr[], int n) {
     int i, j, minIndex, temp;
     for (i = 0; i < n - 1; i++) {
@@ -22,6 +23,7 @@ void printArray(int arr[], int n) {
     printf("\n");
 }
 
+
 double getSortTime(int arr[], int n) {
     // Создаём копию массива, чтобы не портить оригинал
     int* copy = (int*)malloc(n * sizeof(int));
@@ -29,13 +31,19 @@ double getSortTime(int arr[], int n) {
         fprintf(stderr, "Memory allocation error in getSortTime\n");
         return -1.0;
     }
+
+    // Копируем массив
     for (int i = 0; i < n; i++)
         copy[i] = arr[i];
 
+    // Замеряем время сортировки
     clock_t start = clock();
     sortirovka(copy, n);
     clock_t end = clock();
 
+    // Освобождаем память
     free(copy);
+
+    // Возвращаем время в секундах
     return (double)(end - start) / CLOCKS_PER_SEC;
 }
