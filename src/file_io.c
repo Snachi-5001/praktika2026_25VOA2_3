@@ -3,20 +3,45 @@
 #include <stdlib.h>
 #include "file_io.h"
 
-int read_from_file(int* arr, int n, const char* filename) {
+int read_from_file(int** arr, const char* filename) {
     FILE* file = fopen(filename, "r");
     if (file == NULL) {
         fprintf(stderr, "Error: cannot open file '%s' for reading\n", filename);
         return -1;
     }
+
+    int capacity = 10;
     int count = 0;
-    for (int i = 0; i < n; i++) {
-        if (fscanf(file, "%d", &arr[i]) == 1)
-            count++;
-        else
-            break;
+    *arr = (int*)malloc(capacity * sizeof(int));
+    if (*arr == NULL) {
+        fclose(file);
+        fprintf(stderr, "Memory allocation error\n");
+        return -1;
     }
+
+    int num;
+    while (fscanf(file, "%d", &num) == 1) {
+        if (count >= capacity) {
+            capacity *= 2;
+            int* new_arr = (int*)realloc(*arr, capacity * sizeof(int));
+            if (new_arr == NULL) {
+                free(*arr);
+                fclose(file);
+                fprintf(stderr, "Memory reallocation error\n");
+                return -1;
+            }
+            *arr = new_arr;
+        }
+        (*arr)[count++] = num;
+    }
+
     fclose(file);
+    if (count == 0) {
+        free(*arr);
+        *arr = NULL;
+        fprintf(stderr, "File '%s' is empty or contains no numbers\n", filename);
+        return -1;
+    }
     return count;
 }
 
