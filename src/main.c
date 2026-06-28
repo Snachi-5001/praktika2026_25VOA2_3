@@ -1,22 +1,33 @@
-//добовление массива
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
 #include "file_io.h"
-#include "menu.h"
 
 int main() {
-    // Статический массив созданный заранее
-    int arr[] = { 64, 25, 12, 22, 11, 90, 3, 45, 18, 7 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int* arr = NULL;
+    int n = read_from_file(&arr, "input.txt");
+    if (n <= 0) {
+        fprintf(stderr, "Program terminated: input.txt is empty or missing.\n");
+        return 1;
+    }
 
-    printf("sortirovka viborom \n");
-    printf("ishoidni masiv: ");
+    printf("Selection sort\n");
+    printf("Original array (%d numbers): ", n);
     printArray(arr, n);
 
     sortirovka(arr, n);
 
-    printf("otsortirivani massiv: ");
+    printf("Sorted array: ");
     printArray(arr, n);
+
+    if (save_to_file(arr, n, "output.txt") != 0) {
+        fprintf(stderr, "Error writing to output.txt\n");
+        free(arr);
+        return 1;
+    }
+
+    printf("Result saved to output.txt (%d numbers)\n", n);
+    free(arr);
     return 0;
 }
